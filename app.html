@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+      <script>
+          const remSize = 7.5;
+          const remHtml = document.documentElement;
+          const remEvent = "orientationchange" in window ? "orientationchange" : "resize";
+          var oldFontSize;
+          function remChange() {
+              const clientWidth = Math.min(document.body.clientWidth, 414);
+              const fontSize = clientWidth / remSize;
+              if(oldFontSize !== fontSize){
+                  oldFontSize = fontSize;
+                  clientWidth && (remHtml.style.fontSize = fontSize+'px');
+              }
+          }
+          remChange();
+          window.addEventListener(remEvent, remChange);
+      </script>
+    {{ APP }}
+  </body>
+</html>

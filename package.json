@@ -1,0 +1,27 @@
+{
+  "name": "nuxt",
+  "version": "1.0.0",
+  "description": "My gnarly Nuxt.js project",
+  "author": "yuguang.guo",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "babel-core": "7.0.0-bridge.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "nodemon": "^1.18.9"
+  }
+}

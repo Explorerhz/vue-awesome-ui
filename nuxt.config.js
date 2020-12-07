@@ -1,4 +1,3 @@
-
 module.exports = {
   mode: 'universal',
   /*
@@ -16,7 +15,7 @@ module.exports = {
     ]
   },
   /*
-  ** Customize the progress-bar color
+  ** Customize the progress-bar colorcolor
   */
   loading: { color: '#fff' },
   /*

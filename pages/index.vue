@@ -7,7 +7,7 @@
       </div>
       <tj-progress :percentage="percentage" :showPivot="false" :height="10"></tj-progress>
       <button @click="popupVisible = true">click</button>
-      <tj-dropdown-menu >
+      <tj-dropdown-menu>
         <tj-dropdown-item title="综合" v-model="v1" :options="option1"></tj-dropdown-item>
         <tj-dropdown-item v-model="v2" :options="option2"></tj-dropdown-item>
         <tj-dropdown-item title="筛选">abc</tj-dropdown-item>

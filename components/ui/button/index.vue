@@ -1,7 +1,7 @@
 <template>
   <div class="tj-button" :class="class_" :style="style_" @click.stop="onClick">
     <tj-icon :name="iconname" :color="color"></tj-icon>
-    <span><slot></slot></span>
+    <span><slot> </slot></span>
   </div>
 </template>
 <script>
